@@ -1,0 +1,47 @@
+<div class="site-footer">
+    <div class="container">
+        <div class="site-footer__widgets">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-7">
+                    <app-footer-contacts></app-footer-contacts>
+                </div>
+                <div class="col-6 col-md-3 col-lg-2">
+                    <app-footer-links header="Empresa" [links]="[
+                        {label: 'Nosotros',             url: '/'},
+                        {label: 'Catálogos',            url: '/'},
+                        {label: 'Nuestras Tiendas',     url: '/'},
+                        {label: 'Venta Empresas',       url: '/'},
+                        {label: 'Trabaja con Nosotros', url: '/'}
+                    ]"></app-footer-links>
+                </div>
+                <div class="col-6 col-md-3 col-lg-3">
+                    <app-footer-links header="Atención al Cliente" [links]="[
+                        {label: 'Tutorial de Compra',           url: '/'},
+                        {label: 'Blog',                         url: '/'},
+                        {label: 'Preguntas Frecuentes',         url: '/'},
+                        {label: 'Cambios y Devoluciones',       url: '/'},
+                        {label: 'Comprobantes Electrónicos',    url: '/'},
+                        {label: 'Terminos y Condiciones',       url: '/'},
+                        {label: 'Política de Datos Personales', url: '/'},
+                        {label: 'Mis pedidos',                  url: '/'},
+                        {label: 'Contactanos',                  url: '/'},
+                        {label: 'Libro de Reclamaciones',       url: '/'}
+                    ]"></app-footer-links>
+                </div>
+                <!--div class="col-12 col-md-12 col-lg-4">
+                    <app-footer-newsletter class="site-footer__widget"></app-footer-newsletter>
+                </!--div-->
+            </div>
+        </div>
+
+        <div class="site-footer__bottom">
+            <div class="site-footer__copyright">
+                Powered by <a href="https://angular.io/" target="_blank">Angular</a> — Design by <a [href]="theme.author.profile_url" target="_blank">{{ theme.author.name }}</a>
+            </div>
+            <div class="site-footer__payments">
+                <img src="assets/images/payments.png" alt="">
+            </div>
+        </div>
+    </div>
+    <app-totop></app-totop>
+</div>
